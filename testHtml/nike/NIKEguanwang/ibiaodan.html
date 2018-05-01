@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="css/houtai.css" />
+	<body>
+		<div class="xiaoniu">
+			<h2 style="color: lightseagreen; padding-left: 10px; padding-top: 5px;">表单</h2>
+			<br><br><br>
+			<div class="zhygl">
+				<div class="xxx1" id="xxx1"><span onclick="achu1()">基本信息</span></div>
+				<div class="xxx2" id="xxx2"><span onclick="achu2()">详细信息</span></div>
+				<div class="xxx3" id="xxx3"><span onclick="achu3()">SEO选项</span></div>
+			</div>
+			<div class="kuan1" id="kuan1">
+				<img src="img/hah.png">
+			</div>
+			<div class="kuan2" id="kuan2">
+				<img src="img/aaaa.png">
+			</div>
+			<div class="kuan3" id="kuan3">
+				<img src="img/dsad.png">
+			</div>
+		
+			
+		</div>
+		<script>
+			function achu1(){
+				document.getElementById("xxx2").style.border="white"
+				document.getElementById("xxx3").style.border="white"
+				document.getElementById("xxx1").style.border="1px solid gray"
+				document.getElementById("xxx1").style.borderBottomColor="white"
+				document.getElementById("kuan1").style.display="block";
+				document.getElementById("kuan2").style.display="none";
+				document.getElementById("kuan3").style.display="none";
+			}
+			function achu2(){
+				document.getElementById("xxx1").style.border="white"
+				document.getElementById("xxx3").style.border="white"
+				document.getElementById("xxx2").style.border="1px solid gray"
+				document.getElementById("xxx2").style.borderBottomColor="white"
+				document.getElementById("kuan1").style.display="none";
+				document.getElementById("kuan2").style.display="block";
+				document.getElementById("kuan3").style.display="none";
+			}
+			function achu3(){
+				document.getElementById("xxx2").style.borderColor="white"
+				document.getElementById("xxx1").style.border="white"
+				document.getElementById("xxx3").style.border="1px solid gray"
+				document.getElementById("xxx3").style.borderBottomColor="white"
+				document.getElementById("kuan1").style.display="none";
+				document.getElementById("kuan2").style.display="none";
+				document.getElementById("kuan3").style.display="block";
+			}
+		</script>
+	</body>
+</html>

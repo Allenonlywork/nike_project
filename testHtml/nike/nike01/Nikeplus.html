@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>	</title>
+		<style>
+			.container{
+				width: 1349px;
+				height: auto;
+				margin: auto;
+				
+			}
+			.nav{
+				width: 1349px;
+				height: 108px;
+				border: 1px solid black;
+				position: fixed;
+				z-index: 5;
+				background: whitesmoke;
+				margin-top: 0px;
+			}
+			.background{
+				width: 1349px;
+				height: 723.2px;
+				position: relative;
+			}
+			.bgPic{
+				width: 1349px;
+				height: 100%;
+			}
+			.background button{
+				width: 120px;
+				height: 30px;
+				background: gray;
+				position: absolute;
+				top: 450px;
+				left: 615px;
+				text-align: center;
+				color: white;
+				font-size:15px ;
+			}
+			.title h1{
+				text-align: center;
+				font-size: 50px;
+				line-height: 50px;
+			}
+			.centPic1{
+				width: 262.25px;
+				height: 220px;
+				/*background: red;*/
+				text-align: center;
+				padding-top: 60px;
+				margin-left: 150px;
+				float: left;
+				color: dimgray;
+				
+			}
+			.centPic{
+				width: 262.25px;
+				height: 220px;
+				/*background: gold;*/
+				text-align: center;
+				padding-top: 60px;
+				float: left;
+				color: dimgray;
+				
+			}
+			.centPic4{
+				width: 262.25px;
+				height: 220px;
+				/*background: red;*/
+				text-align: center;
+				padding-top: 60px;
+				margin-right: 150px;
+				float: left;
+				color: dimgray;
+			}
+			.co p{
+				color: black;
+			}
+			.button2{
+				width: 180px;
+				height: 40px;
+				margin-left: 590px;
+				border: 1px solid black;
+				text-align: center;
+				clear: both;
+				font-size: 15px;
+				background: white;
+			}
+			.wechat{
+				width: 1349px;
+				height: 300px;
+				/*background: gold;*/
+				padding-top: 105px;
+				text-align: center;
+				font-size: 15px;
+				
+			}
+			.wechat b{
+				font-size: 30px;
+			}
+			.bottPic{
+				width: 1349px;
+				height: 580px;
+				background: orange;
+			}
+			.text{
+				width: 1049px;
+				height: 150px;
+				margin: auto;
+				
+			}
+			.intext{
+				text-align: center;
+				float: left;
+				
+				width: 349px;
+				height: 150px;
+				color: gray;
+			}
+			.text .intext span{
+				color: orangered;
+			}
+			.text .intext b{
+				color: black;
+			}
+			.weima{
+				width: 1349px;
+				height: 250px;
+				text-align: center;
+				padding-top: 20px;
+				
+			}
+			.word{
+				text-align: center;
+			}
+			.word b{
+				font-size: 30px;
+			}
+			.word span{
+				color: orangered;
+			}
+			.img{
+				width: 1200px;
+				height: 400px;
+				margin-left: 75px;
+				
+			}
+			.last{
+				width: 1200px;
+				height: 300px;
+				margin-left: 75px;
+				/*background: red;*/
+			}
+			.last .text2{
+				width: 600px;
+				height: 300px;
+				color: gray;
+		
+				text-align: center;
+				padding-top: 60px;
+				float: left;
+			}
+			.last .text2 button{
+				width: 100px;
+				height: 30px;
+				border: 1px solid black;
+				margin-top: 20px;
+				text-align: center;
+				background: white;
+			}
+			.finally{
+				clear: both;
+				width: 1349px;
+				height: 278px;
+				/*margin-left: 0px;*/
+				background: #191919;
+			}
+			.finatext{
+				width: 200px;
+				height: 238px;
+				float: left;
+				margin-left: 10px;
+				color: gray;
+				padding-top: 10px;
+				line-height: 30px;
+				
+			}
+			.finally .finatext ul li{
+				list-style: none;
+				cursor: pointer;
+			}
+			.finally .finatext ul li:hover{
+				color: white;
+			}
+			.finapic{
+				width: 250px;
+				height: 248px;
+				margin-right: 100px;
+				float: right;
+				
+			}
+			.finapic .pic{
+				margin-left: 120px;
+				margin-top:10px ;
+				width: 34px;
+				height: 38px;
+				background: url(img/an.png);
+				/*float: right;*/
+			} 
+			.finapic .pic:hover{
+				background: url(img/ming.png);
+			}
+			.finapic .lastpic{
+				width: 126px;
+				height: 125px;
+				background: url("img/ma.png");
+				display: none;
+				/*position: relative;
+				z-index: 1;*/
+			}
+			.pic:hover+.lastpic{
+				display: block;
+			}
+		</style>
+		<!--<script>
+			function live(){
+				document.getElementById("lastpic").style.display="block";
+				
+			}
+		</script>-->
+	</head>
+		<link rel="stylesheet" href="css/homepage.nav.css" />
+	<body>
+		<div class="container">
+			<div class="topnav">
+			<div class="topbar">
+				<div class="container">
+					<div class="topbarnav">
+						<a href="#">NikePlus</a>
+						<span class="sep">|</span>
+						<a href="converse.html">CONVERSE</a>
+						<span class="sep">|</span>
+					<!--<a href="#">IoT</a>
+					<span class="sep">|</span>
+					<a href="#">云服务</a>
+					<span class="sep">|</span>
+					<a href="#">水滴</a>
+					<span class="sep">|</span>
+					<a href="#">金融</a>
+					<span class="sep">|</span>
+					<a href="#">有品</a>
+					<span class="sep">|</span>
+					<a href="#">Select Region</a>-->				
+					</div>
+				<div class="topbarcart">
+					<a href="#">购物车（0）</a>
+				</div>
+				<div class="topbarinfo">
+					<a href="denglu.html">登录</a>
+					<span class="sep">|</span>
+					<a href="zhuce.html">注册</a>
+					<span class="sep">|</span>
+					<a href="#">帮助</a>
+				</div>
+			</div>
+			<hr />
+		</div>
+			<div class="site-header">
+				<div class="container">
+					<div class="header-logo">
+						<a href="homepage.html"><img src="img/nikelogo.png" /></a>
+					</div>
+				<div class="header-nav">
+					<ul>
+						<!--<li class="blank">
+							<a class="category" href="#"></a>
+						</li>-->
+						<li class="nav-item">
+							<a class="link" href="#">NIKEiD专属设置</a>
+							<div class="subnav-container">
+								<div class="floatinfo1">
+									
+								</div>
+								<div class="floatinfo2">
+									新年好礼系列定制<br />
+									NIKEiD NBA系列定制<br />
+									热卖系列定制<br />
+									金典系列定制<br />
+									最新系列定制<br />
+									所有NIKEiD定制<br />
+								</div>
+								<div class="floatinfo3">
+									男子定制<br />
+									所有男子定制<br />
+									休闲<br />
+									篮球<br />
+									跑步<br />
+									足球<br />
+									滑板<br />
+									健身<br />
+								</div>
+								<div class="floatinfo4">
+									女子定制<br />
+									所有女子定制<br />
+									休闲<br />
+									篮球<br />
+									跑步<br />
+									足球<br />
+									滑板<br />
+									健身<br />
+								</div>
+								<div class="floatinfo5">
+									儿童定制<br />
+									所有儿童定制<br />
+									男孩<br />
+									女孩<br />
+									婴童<br />
+								</div>
+								<div class="floatinfo6">
+									FLYKNIT系列定制<br />
+									Air Max系列定制<br />
+									宽掌系列定制 	
+								</div>
+								<div class="floatinfo7">									
+								</div>
+							</div>
+						</li>
+						<li class="nav-item"><a class="link" href="#">女孩</a>
+							<div class="subnav-container">
+								<div class="floatinfo1">									
+								</div>
+								<div class="floatinfo2">
+									所有女孩商品<br />
+									新年精选产品<br />
+									最新上市<br />
+									超值精选<br />
+									耐克“亲子”系列<br />
+									耐克“一脚蹬”系列<br />
+									新生儿套装/礼品<br />
+									折扣优惠<br />
+								</div>
+								<div class="floatinfo3">
+									鞋类<br />
+									婴童（0-3岁）<br />
+									幼童（4-6岁）<br />
+									大童（7岁以上）<br />									
+								</div>
+								<div class="floatinfo4">
+									服装<br />
+									婴童（0-3岁）<br />
+									幼童（4-6岁）<br />
+									大童（7岁以上）<br />	
+								</div>
+								<div class="floatinfo5">
+									装备<br />
+									包<br />
+									袜子<br />
+									帽子<br />	
+								</div>
+								<div class="floatinfo6">
+									主推鞋款<br />
+									DYNAMO系列<br />
+									AIR FORCE 1 系列<br />
+									AIR MAX系列<br />	
+									HUARACHE系列<br />
+								</div>
+								<div class="floatinfo7">
+									
+								</div>
+							</div>
+						</li>
+						<li class="nav-item"><a class="link" href="#">男孩</a>
+							<div class="subnav-container">
+								<div class="floatinfo1">
+									
+								</div>
+								<div class="floatinfo2">
+									所有男孩商品<br />
+									新年精选产品<br />
+									最新上市<br />
+									超值精选<br />
+									耐克“亲子”系列<br />
+									耐克“一脚蹬”系列<br />
+									新生儿套装/礼品<br />
+									折扣优惠<br />
+								</div>
+								<div class="floatinfo3">
+									鞋类<br />
+									婴童（0-3岁）<br />
+									幼童（4-6岁）<br />
+									大童（7岁以上）<br />									
+								</div>
+								<div class="floatinfo4">
+									服装<br />
+									婴童（0-3岁）<br />
+									幼童（4-6岁）<br />
+									大童（7岁以上）<br />	
+								</div>
+								<div class="floatinfo5">
+									装备<br />
+									包<br />
+									袜子<br />
+									帽子<br />	
+								</div>
+								<div class="floatinfo6">
+									主推鞋款<br />
+									DYNAMO系列<br />
+									AIR FORCE 1 系列<br />
+									AIR MAX系列<br />	
+									HUARACHE系列<br />
+								</div>
+								<div class="floatinfo7">
+									
+								</div>
+							</div>
+						</li>
+						<li class="nav-item"><a class="link" href="#">女子</a>
+							<div class="subnav-container">
+								<div class="floatinfo1">
+									
+								</div>
+								<div class="floatinfo2">
+									新年好礼系列定制<br />
+									NIKEiD NBA系列定制<br />
+									热卖系列定制<br />
+									金典系列定制<br />
+									最新系列定制<br />
+									所有NIKEiD定制<br />
+								</div>
+								<div class="floatinfo3">
+									鞋类<br />
+									所有鞋类<br />
+									休闲<br />
+									篮球<br />
+									跑步<br />
+									健身/训练<br />
+									足球<br />
+									滑板<br />
+									NILEiD专属定制<br />
+								</div>
+								<div class="floatinfo4">
+									服装<br />
+									所有服装<br />
+									专业运动内衣Bra<br />
+									紧身运动服<br />
+									上衣/T恤<br />
+									连帽衫/套头衫<br />
+									夹克/马甲<br />
+									长裤/紧身裤<br />									
+								</div>
+								<div class="floatinfo5">
+									儿童定制<br />
+									所有儿童定制<br />
+									男孩<br />
+									女孩<br />
+									婴童<br />
+								</div>
+								<div class="floatinfo6">
+									FLYKNIT系列定制<br />
+									Air Max系列定制<br />
+									宽掌系列定制 	
+								</div>
+								<div class="floatinfo7">
+									
+								</div>
+							</div>
+						</li>
+						<li class="nav-item"><a class="link" href="#">男子</a>
+							<div class="subnav-container">
+								<div class="floatinfo1">
+									
+								</div>
+								<div class="floatinfo2">
+									最新上市<br />
+									新年精选产品<br />
+									热卖商品<br />
+									NIKEiD NBA系列定制<br />
+									SNKRS新品预览<br />
+									699以下精选<br />
+									折扣优惠<br />
+								</div>
+								<div class="floatinfo3">
+									鞋类<br />
+									所有鞋类<br />
+									休闲<br />
+									篮球<br />
+									跑步<br />
+									健身/训练<br />
+									足球<br />
+									滑板<br />
+									NILEiD专属定制<br />
+								</div>
+								<div class="floatinfo4">
+									服装<br />
+									所有服装<br />
+									紧身运动服<br />
+									上衣/T恤<br />
+									连帽衫/套头衫<br />
+									夹克/马甲<br />
+									长裤/紧身裤<br />
+									上衣/T恤<br />
+									球迷装备<br />
+								</div>
+								<div class="floatinfo5">
+									运动<br />
+									休闲<br />
+									篮球<br />
+									跑步<br />
+									健身/训练<br />
+									足球<br />
+									滑板<br />
+									瑜伽<br />
+								</div>
+								<div class="floatinfo6">
+									品牌<br />
+									Nike Sportswear<br />
+									NikeLab<br />
+									NIKEiD专属定制<br />
+									<nba></nba><br /> 	
+								</div>
+								<div class="floatinfo7">
+									
+								</div>
+							</div>
+						</li>						
+				</div>
+				<div class="header-search">
+					<input type="text" placeholder="搜索" style="height: 30px;"/>
+				</div>
+			</div>	
+			<hr width="100%"/>
+			</div>				
+		</div>			
+			<div class="background">
+				<img class="bgPic" src="img/timg.jpg">
+				<a style="text-decoration: none;" href="zhuce.html">
+					<button class="button" style="border-radius: 5px;">立即加入会员</button></a>
+			</div>
+			<div class="title">
+				<br>
+				<h1>解锁更多NIKE服务，激发更强的自己</h1>
+			</div>
+			<div class="centPic1 co">
+				<img src="img/1507064517932.png">
+				<br>
+				<p><b>优先入手</b></p>
+				<br>
+				先人一步入手<br>
+				你喜爱的热门新品<br>
+			</div>
+			<div class="centPic co">
+				<img src="img/1507064919955.png">
+				<br>
+				<p><b>丰富活动</b></p>
+				<br>
+				多种多样的训练课程与<br>
+				不同城市的体验活动<br>
+			</div>
+			<div class="centPic co">
+				<img src="img/1507065001077.png">
+				<br>
+				<p><b>专属特权</b></p>
+				<br>
+				会员独享的产品优惠<br>
+				专属活动与服务邀约<br>
+			</div>
+			<div class="centPic4 co">
+				<img src="img/1507065096328.png">
+				<br>
+				<p><b>免费配送</b></p>
+				<br>
+				订单免费运及<br>
+				30天退换货服务<br>
+			</div>
+			<a style="text-decoration: none;" href="zhuce.html"><button style="border-radius: 5px;" class="button2">立即加入</button></a>
+			<div class="wechat">
+				<img src="img/1507065592966.png"><br>
+				<b>绑定NIKE官方微信</b><br><br>
+				解锁更多个性化服务与专享体验<br>
+				尽享运动乐趣，释放无限潜能<br>
+			</div>
+			<div class="bottPic">
+				<img src="img/45.png">
+			</div>
+			<div class="text">
+				<div class="intext">
+					<b>专属 <span>特权</span></b><br><br>
+					在NIKE官微，你会收到只属于你的<br>
+					 产品优惠、专属服务与活动邀约<br>
+				</div>
+				<div class="intext">
+					<b>丰富 <span>活动</span></b><br><br>
+					在NIKE官微，你能轻松参与和管理<br>
+					 所有会员限定课程和体验活动<br>
+				</div>
+				<div class="intext">
+					<b>优先 <span>入手</span></b><br><br>
+					 在NIKE官微，你将第一时间收到品牌<br>
+					 动态、还能先人一步入手喜爱的装备<br>
+				</div>
+			</div>
+			<div class="weima">
+				<img src="img/1507653632193.png">
+			</div>
+			<div class="word">
+				<b>NIKE <span>PLUS</span>会员，不止于此</b><br><br>
+				一个账号即可畅享所有NIKE应用程序，NIKE.COM等服务<br>
+			</div>
+			<div class="img">
+				<div><img style="float: left; " src="img/1507059636516.png"></div>
+				<div><img style="float: left;" src="img/1507059612165.png"></div>
+			</div>
+			<div class="last">
+				<div class="text2">
+					<b style="color: black;">NIKE RUN CLUB 应用程序</b><br><br>
+						追踪跑步记录，提供个性化训练计划，<br>
+						更可与朋友分享跑步成绩。<br>
+						全面提升你的表现，让你跑得更出色。<br>
+						<button style="font-size: 15px;">了解详情</button>
+				</div>
+				<div class="text2">
+					<b style="color: black;">NIKE TRAINING CLUB 应用程序</b><br><br>
+						囊括100多项训练，搭配专业教练的<br>
+						清晰音频与视频指导，还有更多全新训练计划。<br>
+						让你速度更快，体能更强，体魄更健美。<br>
+						<button style="font-size: 15px;">了解详情</button>
+				</div>
+			</div>
+				<div class="finally" >
+					<div class="finatext" style="margin-left: 130px;">
+						<ul>
+							<li>电子礼品卡</li>
+							<li>附近商店</li>
+							<li>订阅电子邮件</li>
+							<li>注册NIKE会员</li>
+							<li>网站反馈</li>
+						</ul>
+					</div>
+					<div class="finatext">
+						<ul>
+							<li>获取帮助</li>
+							<li>订单状态</li>
+							<li>配送方式</li>
+							<li>退换货</li>
+							<li>付款选项</li>
+							<li>联系我们</li>
+						</ul>
+					</div>
+					<div class="finatext">
+						<ul>
+							<li>关于NIKE</li>
+							<li>新闻</li>
+							<li>投资者</li>
+							<li>招贤纳士</li>
+							<li>新品预览</li>
+							<li>企业团购</li>
+						</ul>
+					</div>
+					<div class="finapic">
+						<div class="pic" id="pic" onclick="live()"></div>
+						<div class="lastpic"id="lastpic"></div>
+					</div>
+					  <div style="width: 1049px; text-align: center; margin: auto;">
+					  	<hr width="1049px" color="gray">
+					  </div>
+				</div>
+		</div>
+	</body>
+</html>

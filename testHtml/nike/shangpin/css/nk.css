@@ -1,0 +1,25 @@
+.show{width: 780px; height: 1254px;   float: left; margin-top: 155px;margin-left: 55px;}
+.buy{width: 366px; height: 1254px;  float: right;margin-top: 155px;margin-right: 55px;}
+.body{width:1349px ;height: 2285px;position: relative;}
+.tab{width:360px ;height: 160px;}
+.tab div{width:65px ;height: 50px;float: left; border: 1px solid black;text-align: center;line-height:50px ;}
+.a1{background: url(../img/logob.jpg);}
+.bot{width:290px ;height: 50px;background-color: #000000;margin: auto; }
+.s{color: white; margin: auto;}
+.bottow{width:70px ;height: 50px;background-color: #000000; margin: auto;}
+.none{width:360px; height: 120px; }
+.down{width: 1030px;height: 365px;position: absolute;margin-top: 1600px;margin-left: 159px;}
+.h{margin-left: 335px;}
+.head{width: 1350px;height: 235px;margin-top: 170px;}
+.head h1{text-align: center;}
+.head input{width: 300px;height: 30px;}
+.head a{text-decoration: none;}
+.cent {width: 1110px;height: 415px;  margin: auto; border: 1px solid lightsteelblue; }
+.cent .div1{ margin-left: 100px; margin-top: 100px;width: 910px;}
+.cent a{text-decoration: none; color: #000000; }
+.cent .diva{width: 300px;float: left;}
+.div2{width: 1110px;height: 230px; margin: auto; border: 1px solid lightsteelblue;margin-top: 50px;}
+.div2.divh{ margin-left: 100px; margin-top: 100px;width: 910px;}
+.centz {width: 1110px;height: 200px; margin: auto; border: 1px solid lightsteelblue; }
+.centz .divz{ margin-left: 100px; margin-top: 60px;width: 910px;}
+.centz button{background-color: #000000;color: white;width: 108px;height: 40px; float: right; margin-right: 70px;}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		#div1{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+			display: none;
+		}
+	</style>
+	<body>
+		<label id="remind" onmouseover="a()" onmouseout="b()"><input type="checkbox"/> 自动登陆 </label>
+		<div id="div1">请不要爱上我	。。。</div><br />
+		
+	</body>
+	<script type="text/javascript">	
+		window.onload=function(){
+			var odiv=document.getElementById('div1');
+			odiv.onmouseover=a();
+			odiv.onmouseout=b();
+		}
+		/*function a(){
+			document.getElementById('div1').style.display='block';
+		}
+		function b(){
+			document.getElementById('div1').style.display='none';
+		}*/
+		function a(){
+			var odiv1=document.getElementById('div1');
+			odiv1.style.display='block';
+		}
+		function b(){
+			var odiv2=document.getElementById('div1');
+			odiv2.style.display='none';
+		}
+	</script>
+</html>

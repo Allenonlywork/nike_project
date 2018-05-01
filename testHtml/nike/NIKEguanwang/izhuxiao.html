@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/houtai.css"/>
+	<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+	<body>
+		<div class="zhuxiao">
+			<h2 style="color: lightseagreen; padding-left: 10px; padding-top: 5px;">注销账户</h2>
+			<div class="zmiddle">
+				<div class="zlogo"></div>
+				<div class="ztext1">
+					<br><p>注销<b>NIKE<sub>+</sub></b>会员</p><br>
+					NIKE随时为你服务，助你选购卓越装备，为你提供专业指<br>
+					导、非凡体验和无限动力。<br>
+				</div>
+				<div class="zfrom">
+					<form action="success.html" method="get" onsubmit="return check()" >
+					<br>
+					<input type="text" id="zemail" placeholder="电子邮件" class="kuang" /><br><br>
+					<input type="password" id="zmima" placeholder="密码" class="kuang" /><br><br>
+					<input type="text" id="xingshi" placeholder="姓氏" class="kuang" /><br><br>
+					<input type="text" id="mingzi" placeholder="名字" class="kuang" /><br><br>
+					<input type="text" id="riqi" placeholder="出生日期（例：1980-1-23）"class="kuang"/><br><br>
+					<select id="guoji"/>
+						<option>中国</option>
+						<option>中国澳门特别行政区</option>
+						<option>中国香港特别行政区</option>
+						<option>中非共和国</option>
+						<option>丹麦</option>
+						<option>乌克兰</option>
+						<option>乌兹别克斯坦</option>
+						</select>
+					<br><br>
+					<div class="fuxuan" onclick="yes()" id="fuxuan">男</div>
+					<div class="fuxuan" onclick="yes()" id="fuxuan">女</div>
+					<br><br><br>
+					<input type="text" style="width: 400px; height: 80px; border: 1px solid gray; border-radius: 5px;" placeholder="注销原因">
+					<p class="text3"><input type="checkbox" class="tiaokuan"/>
+						注销成功发送电子邮件，告知用户<br>
+						一旦注销账户，即表明你同意NIKE的隐私政策和使用条款<br></p>
+					<br><br>
+					<input type="submit" id="zsub" value="注销" class="button3"/><br><br>
+					</form>
+				</div>
+			</div>
+			<script>
+				var emailnum = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+				var mmimanum =  /^[a-zA-Z]\w{5,17}$/; /*以字母开头，长度在6~18之间，只能包含字符、数字和下划线*/
+				var riqinum = /^(19|20)\d{2}-(1[0-2]|0?[1-9])-(0?[1-9]|[1-2][0-9]|3[0-1])$/;
+				var email = document.getElementById("zemail");
+				var mima = document.getElementById("zmima");
+				var riqi = document.getElementById("riqi");
+				var tip = document.getElementById("zsub");
+			function yes(){
+				
+				var str=document.getElementById("fuxian").innerHTML="hahahhah";
+				var box= str.innerHTML;
+				   
+			}
+			function check(){
+				
+				if(!(emailnum.test(email.value)) || !(mmimanum.test(mima.value)) || !(riqinum.test(riqi.value))  )
+				{
+					return false;
+				}else{
+					return true;
+				}
+			}
+			
+			</script>
+		</div>
+	</body>
+</html>

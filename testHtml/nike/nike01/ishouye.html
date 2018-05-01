@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/houtai.css"/>
+	<body>
+		<div class="bigbox">
+			<h2 style="color: lightseagreen; padding-left: 10px; padding-top: 5px;">首页</h2>
+			<br>
+			<div class="ihead">
+				<div class="smallpic">
+					<img src="img/1.png">
+					<br><span>新增页面<br>2300</span>	
+				</div>
+				<div class="smallpic">
+					<img src="img/2.png">
+					<br><span>成交订单<br>306</span>	
+				</div>
+				<div class="smallpic">
+					<img src="img/3.png">
+					<br><span>昨日访问<br>82300</span>	
+				</div>
+				<div class="smallpic" style="border-right-color:white;">
+					<img src="img/4.png">
+					<br><span>在线用户<br>5300</span>	
+				</div>
+			</div>
+			<br>
+				<div class="itable">
+					<table>
+					<tr>
+						<table bgcolor="white" style="border-bottom-color: gray;" class="xiaoge">
+							<tr>
+								<td ><b>ID</b></td>
+								<td ><b>用户名</b></td>
+								<td ><b>最后成交商品</b></td>
+								<td><b>成交订单号</b></td>
+								<td><b>管理</b></td>
+							</tr>
+						</table>
+					</tr><!--一行-->
+					<tr>
+						<table bgcolor="#f9f9f9" class="xiaoge" style="border-bottom-color: gray;">
+							<tr>
+								<td width="70px" ><b>1</b></td>
+								<td width="172px">heroxq</td>
+								<td width="347px">Nike Air Huarache Drift男子运动鞋</td>
+								<td width="287px">12568453211</td>
+								<td width="116px"><b style="cursor: pointer;">删除</b></td>
+							</tr>
+						</table>
+					</tr><!--一行-->
+					<tr>
+						<table bgcolor="white" style="border-bottom-color: gray;" class="xiaoge">
+							<tr>
+								<td width="70px"><b>2</b></td>
+								<td width="172px">lithromantic</td>
+								<td width="347px">Nike Sportswear男子连帽衫</td>
+								<td width="287px">59862347541</td>
+								<td width="116px"><b style="cursor: pointer;">删除</b></td>
+							</tr>
+						</table>
+					</tr><!--一行-->
+					<tr>
+						<table bgcolor="#f9f9f9" class="xiaoge" style="border-bottom-color: gray;">
+							<tr>
+								<td width="70px"><b>3</b></td>
+								<td width="172px">whisper</td>
+								<td width="347px">Nike Air Max Guile女子运动鞋</td>
+								<td width="287px">89532456852</td>
+								<td width="116px"><b style="cursor: pointer;">删除</b></td>
+							</tr>
+						</table>
+					</tr><!--一行-->
+					<tr>
+						<table bgcolor="white" style="border-bottom-color: gray;" class="xiaoge">
+							<tr>
+								<td width="70px"><b>4</b></td>
+								<td width="172px">xiaogege</td>
+								<td width="347px">Nike Air Huarache Drift男子运动鞋</td>
+								<td width="287px">48562314785</td>
+								<td width="116px"><b style="cursor: pointer;">删除</b></td>
+							</tr>
+						</table>
+					</tr><!--一行-->
+					<tr>
+						<table bgcolor="#f9f9f9" class="xiaoge" style="border-bottom-color: gray;">
+							<tr>
+								<td width="70px"><b>5</b></td>
+								<td width="172px">zhangxiaoniu</td>
+								<td width="347px">Nike Air Max Guile女子运动鞋</td>
+								<td width="287px">589623147546</td>
+								<td width="116px"><b style="cursor: pointer;">删除</b></td>
+							</tr>
+						</table>
+					</tr><!--一行-->
+					</table>
+				</div>
+				<br>
+				<div class="wenjian" >
+					<span onclick="chuxian1()">文件上传▼</span><br>
+					<div class="shangchuan" id="shangchuan">
+						<img src="img/2018-01-27_161150.png">
+					</div>
+					<br><br>
+					<div class="liulanqi" >
+						<span onclick="chuxian2()">浏览器统计▼</span><br>
+						<div class="tongji" id="tongji">
+							<img src="img/aa.png">
+						</div>
+					</div>
+				</div>
+				
+				<div class="renwu">
+					<span onclick="chuxian3()">任务task▼</span><br>
+					<div class="itask" id="itask">
+						<img src="img/sf.png"> 
+					</div>
+					<br><br>
+					<div class="zuijin">
+						<span onclick="chuxian4()">最近留言▼</span><br>
+						<div class="liuyan" id="liuyan">
+							<img src="img/gffg.png">
+						</div>
+					</div>
+				</div>
+				<br>
+				<script>
+					function chuxian1(){
+						var ss=document.getElementById("shangchuan").style.display;
+						if(ss=="none")
+						{
+							ss="block";
+						}else{
+							ss="none";
+						}
+						document.getElementById("shangchuan").style.display=ss;
+						
+					}
+					function chuxian2(){
+						var ss=document.getElementById("tongji").style.display;
+						if(ss=="none")
+						{
+							ss="block";
+						}else{
+							ss="none";
+						}
+						document.getElementById("tongji").style.display=ss;
+					}
+					function chuxian3(){
+						var ss=document.getElementById("itask").style.display;
+						if(ss=="none")
+						{
+							ss="block";
+						}else{
+							ss="none";
+						}
+						document.getElementById("itask").style.display=ss;
+					}
+					function chuxian4(){
+						var ss=document.getElementById("liuyan").style.display;
+						if(ss=="none")
+						{
+							ss="block";
+						}else{
+							ss="none";
+						}
+						document.getElementById("liuyan").style.display=ss;
+					}
+				</script>
+		</div><!--大盒子-->
+	</body>
+</html>

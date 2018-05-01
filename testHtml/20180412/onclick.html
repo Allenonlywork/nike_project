@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.test{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+		}
+		.test2
+		{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var odiv=document.getElementById('div1');
+			/*var odiv2=document.getElementsByClassName('test2');*//*获取类名来修改样式不管用*/
+			odiv.onclick=a;	
+			/*odiv2.onClick=b;*/
+		}	
+		function a(){
+				var odiv1=document.getElementById('div1');
+				odiv1.className='test2';
+			}
+		/*function b(){
+				var odiv1=document.getElementById('div1');
+				odiv1.className='test';
+			}*/
+	</script>
+	<body>
+		<div id="div1" class="test" ></div>		
+	</body>
+</html>

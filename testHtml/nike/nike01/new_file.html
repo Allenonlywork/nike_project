@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+		function showDiv(){
+			document.getElementById("goodslist").style.display="block";
+		}
+		function closeDiv(){
+			document.getElementById("goodslist").style.display="none";
+		}
+	</script>
+	</head>
+	<body>
+		<ul style="height: 50px; width: 50px;">
+			<li onmouseover="showDiv()" onmouseout="closeDiv()" style="height: 50px; width: 50px;">
+				nihao
+			</li>
+		</ul>
+		<div id="goodslist" style="background-color: red; height: 100px; width: 100px; display: none;"></div>
+	</body>
+</html>

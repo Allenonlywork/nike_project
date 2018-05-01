@@ -1,0 +1,213 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.topnav{
+	width: 100%;
+	height: 108px;
+	position: fixed;
+	top: 0px;
+	z-index: 2;
+	background: white;
+}
+.topbar{
+	width: 100%;
+	height: 39px;
+/*	background-color:white;*/
+}
+.topbar .container{
+	width: 1226px;
+	height: 40px;
+	margin: auto;
+}
+.topbar .container .topbarnav{
+	width:400px;
+	height: 39px;
+	/*background: yellow;*/
+	float: left;
+}
+.topbar .container .topbarnav a{
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #b0b0b0;
+	text-decoration: none;
+	line-height: 39px;
+}
+.topbar .container .topbarnav a:hover{
+	color: black;
+}
+.topbar .container .topbarcart{
+	width:120px;
+	height: 39px;
+	margin-left: 15px;
+/*	background: blue;*/
+	float: right;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	line-height: 39px;
+	text-align: center;
+}
+.topbar .container .topbarcart a{
+	text-decoration: none;
+	color: #B0B0B0;
+}
+.topbar .container .topbarcart a:hover{
+	color: black;
+}
+.topbar .container .topbarinfo{
+	width:142px;
+	height: 39px;
+/*	background: green;*/
+	float: right;
+}
+.topbar .container .topbarinfo a{
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color: #b0b0b0;
+	text-decoration: none;
+	line-height: 39px;
+}
+.topbar .container .topbarinfo a:hover{
+	color: black;
+}
+.site-header{
+	width: 100%;
+	height: 69px;
+/*	background: red;*/
+	text-align: center;
+}
+.site-header .container{
+	
+	width: 1226px;
+	height: 69px;
+	margin: auto;
+/*	background: blue;*/
+}
+.site-header .container .header-logo{
+	width: 62px;
+	height: 55px;
+/*	background: green;*/
+	margin:5px auto;
+	float: left;
+}
+.site-header .container .header-logo img{
+	cursor: pointer;
+}
+.site-header .container .header-nav{
+	float:left;
+	width: 850px;
+	height: 69px;
+/*	background: firebrick;*/
+	line-height: 69px;
+}
+.site-header .container .header-nav .blank{
+	position: relative;
+	width: 127px;
+
+	float: left;
+/*	background: #FFFF00;*/
+}
+/*.site-header .container .header-nav .blank .category{
+	text-align: right;
+	padding: 26px 0 38px;
+}*/
+.site-header .container .header-nav ul{
+	position: relative;
+	float: left;
+	width: 820px;
+	height: 69px;
+	margin: 0px;
+	padding: 12px 0 0 30px;
+	list-style: none;
+	font-size: 16px;
+}
+.site-header .container .header-nav .nav-item{
+	float: right;
+	list-style: none;
+	margin-left: 40px;
+}
+.site-header .container .header-nav .nav-item a{
+	color: #B0B0B0;
+}
+.site-header .container .header-nav .nav-item .link{
+	text-decoration: none;
+	padding: 26px 10px 38px;
+}
+.site-header .container .header-nav .nav-item  a:hover{
+	color: black;
+}
+
+.site-header .container .header-search{
+	padding-top: 25px;
+}
+.site-header .container .header-nav .nav-item .subnav-container{
+	border: 1px solid white;
+	width: 100%;
+	height: 406px;
+	position: fixed;
+	background: white;
+	top: 108px;
+	left: 0px;
+	display: none;
+}
+.site-header .container .header-nav .nav-item a:hover+.subnav-container{
+	display: block;
+}
+.site-header .container .header-nav .nav-item .subnav-container:hover.subnav-container{
+	display: block;
+}
+.subnav-container .floatinfo1{
+	width: 20%;
+	height: 300px;
+/*	background: yellow;*/
+	float: left;
+	margin-top: 50px;
+}
+.subnav-container .floatinfo2{
+	width: 15%;
+	height: 300px;
+/*	background: red;*/
+	float: left;
+	margin-top: 50px;
+	border-right:1px solid darkgray;
+}
+.subnav-container .floatinfo3{
+	width: 15%;
+	height: 300px;
+/*	background: yellow;*/
+	float: left;
+	margin-top: 50px;
+	padding-left: 30px;
+}
+.subnav-container .floatinfo4{
+	width: 10%;
+	height: 300px;
+/*	background: green;*/
+	float: left;
+	margin-top: 50px;
+	border-right:1px solid darkgray;
+}
+.subnav-container .floatinfo5{
+	width: 10%;
+	height: 300px;
+/*	background: yellow;*/
+	float: left;
+	margin-top: 50px;
+	padding-left: 30px;
+}
+.subnav-container .floatinfo6{
+	width: 10%;
+	height: 300px;
+/*	background: blue;*/
+	float: left;
+	margin-top: 50px;
+}
+.subnav-container .floatinfo7{
+	width: 20%;
+	height: 300px;
+/*	background: yellow;*/
+	float: left;
+	margin-top: 50px;
+}
+.subnav-container div{
+	display: inline-block;
+	line-height: 30px;
+	text-align: left;
+}

@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.finally{
+				clear: both;
+				width: 1349px;
+				height: 278px;
+				/*margin-left: 0px;*/
+				background: #191919;
+			}
+			.finatext{
+				width: 200px;
+				height: 238px;
+				float: left;
+				margin-left: 10px;
+				color: gray;
+				padding-top: 10px;
+				line-height: 30px;
+				
+			}
+			.finally .finatext ul li{
+				list-style: none;
+				cursor: pointer;
+			}
+			.finally .finatext ul li:hover{
+				color: white;
+			}
+			.finapic{
+				width: 250px;
+				height: 248px;
+				margin-right: 100px;
+				float: right;
+				
+			}
+			.finapic .pic{
+				margin-left: 120px;
+				margin-top:10px ;
+				width: 34px;
+				height: 38px;
+				background: url(../img/an.png);
+				/*float: right;*/
+			} 
+			.finapic .pic:hover{
+				background: url(../img/ming.png);
+			}
+			.finapic .lastpic{
+				width: 126px;
+				height: 125px;
+				background: url(../img/ma.png);
+				display: none;
+				/*position: relative;
+				z-index: 1;*/
+			}
+			.pic:hover+.lastpic{
+				display: block;
+			}
+.bigcounter{
+	width: 1349px;
+	height: auto;
+	margin: auto;
+}
+.zmiddle{
+	width: 500px;
+	height: 800px;
+	margin-top: 105px;
+	margin: auto;
+}
+.zmiddle1{
+	width: 500px;
+	height: 530px;
+	margin-top: 105px;
+	margin: auto;
+	
+}
+.zlogo{
+	width: 64px;
+	height: 45px;
+	background:url(../img/nikelogo.png);
+	margin: auto;
+	margin-top: 118px;
+}
+.ztext1{
+	width: 500px;
+	height: 130px;
+	text-align: center;
+	color: gray;
+}
+.ztext1 p{			
+	font-size: 25px;
+	color: black;
+}
+.zfrom
+{
+	width: 500px;
+	height: 800px;
+	
+	text-align: center;
+}
+.zfrom .kuang{
+	width: 400px;
+	height: 30px;
+	color: gray;
+	border-radius: 5px;
+	
+	
+}
+.zfrom .button3{
+	width: 400px;
+	height: 40px;
+	color: gray;
+	border-radius: 5px;
+	background: black;
+	
+}
+.zfrom select{
+	width: 400px;
+	height: 30px;
+	color: gray;
+	border-radius: 5px;
+	color: darkgray;
+	border: 1.5px solid grey;	
+}
+.zfrom .fuxuan{
+	width: 170px;
+	height: 30px;
+	border: 1px solid gray;
+	color: gray;
+	border-radius: 5px;
+	margin-left: 50px;
+	float: left;	
+}
+.zfrom .tiaokuan{
+	width: 15px;
+	height: 15px;
+	border-radius: 5px;
+	clear: both;
+
+}
+.text3{
+	color: gray;
+	clear: both;
+	text-align: center;
+	font-size: 10px;
+	line-height: 40px;
+}

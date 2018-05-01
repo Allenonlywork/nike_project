@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		#box{
+			background-color: red;
+		}
+		#ull{
+			background-color: blue;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			oBtn=document.getElementById('btn');
+			oull=document.getElementById('ull');
+			/*oBtn.onclick=a;*/
+			oBtn.onclick=function ()
+			{
+				if (oull.style.display=='block') 
+				{
+					oull.style.display='none';
+				}
+				else{
+					oull.style.display='block';
+				}
+			}
+		}
+		
+		/*function a(){
+			var oull=document.getElementById('ull');
+			if (oull.style.display=='block') 
+				{
+					oull.style.display='none';
+				}
+				else{
+					oull.style.display='block';
+				}
+			
+		}*/
+		
+	</script>
+	<body>
+		<div id="box">
+			<p id="btn">输入法</p>
+			<ul id="ull" style="display: block;">
+				<li><a href="">手写</a></li>
+				<li><a href="">手写</a></li>
+				<li><a href="">手写</a></li>
+				<li><a href="">手写</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
